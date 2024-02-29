@@ -1,0 +1,9 @@
+numpy
+torch
+matplotlib
+torchaudio
+soundfile
+pyaudio
+websocket-client
+onnxruntime
+websockets

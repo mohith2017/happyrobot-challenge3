@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vad-deployment
+spec:
+  replicas:  3
+  selector:
+    matchLabels:
+      app: vad
+  template:
+    metadata:
+      labels:
+        app: vad
+    spec:
+      containers:
+      - name: vad
+        image: mohith2017/vad
+        ports:
+        - containerPort:  8000
